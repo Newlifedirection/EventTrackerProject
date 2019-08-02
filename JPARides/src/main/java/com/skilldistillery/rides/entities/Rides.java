@@ -1,4 +1,4 @@
-package com.skilldistillery.com.skilldistillery.xtreme.entities;
+package com.skilldistillery.rides.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
