@@ -12,9 +12,8 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import com.skilldistillery.rides.entities.Rides;
 
 class RidesTests {
 	private static EntityManagerFactory emf;
@@ -34,7 +33,7 @@ class RidesTests {
 	@BeforeEach
 	void setUp() throws Exception {
 		em= emf.createEntityManager();
-		rides = em.find(rides.getClass(), 1);
+		rides = em.find(Rides.class, 1);
 	}
 
 	@AfterEach
@@ -44,10 +43,11 @@ class RidesTests {
 	}
 
 	@Test
+	@DisplayName("Testing name")
 	void test_entity_mappings() {
 		assertNotNull(rides);
-		assertEquals("Hello", rides.getRidescol());
-		fail("Not yet implemented");
+		assertEquals("Copper Triangle", rides.getName());
+		
 	}
 
 }
