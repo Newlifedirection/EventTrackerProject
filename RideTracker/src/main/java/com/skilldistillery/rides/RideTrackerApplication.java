@@ -2,12 +2,17 @@ package com.skilldistillery.rides;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class RideTrackerApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(RideTrackerApplication.class, args);
-	}
+public class RideTrackerApplication extends SpringBootServletInitializer {
+	  @Override
+	  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+	    return application.sources(RideTrackerApplication.class);
+	  }
+	  public static void main(String[] args) {
+		    SpringApplication.run(RideTrackerApplication.class, args);
+		  }
 
 }

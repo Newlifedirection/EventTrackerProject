@@ -12,6 +12,9 @@ Spring REST/JavaScript
 * Write Spring Data JPA to perform CRUD operations including
 (GET, POST, UPDATE(PUT), DELETE)
 
+### Instructions for link
+http://18.216.165.215:8080/RideTracker/api/rides
+
 ### REST API Endpoints
 
 * GET/api/rides - Retrieve all ride rides
