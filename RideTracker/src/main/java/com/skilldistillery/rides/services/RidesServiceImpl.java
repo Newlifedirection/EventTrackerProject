@@ -26,24 +26,6 @@ public class RidesServiceImpl implements RidesService {
 	
 
 
-//	@Override
-//	public Rides update(int rid, Rides ride) {
-//		Optional<Rides> opt = repo.findById(rid);
-//		Rides managedRide = null;
-//		if (opt.isPresent()) {
-//			
-//			managedRide = opt.get();
-//			managedRide.setName(ride.getName());
-//			managedRide.setDate(ride.getDate());
-//			managedRide.setLocation(ride.getLocation());
-//			managedRide.setLength(ride.getLength());
-//			managedRide.setDetails(ride.getDetails());
-//			repo.saveAndFlush(managedRide);
-//
-//		}
-//
-//		return managedRide;
-//	}
 
 	@Override
 	public Boolean delete(int fid) {
@@ -60,7 +42,7 @@ public class RidesServiceImpl implements RidesService {
 	@Override
 	public Rides show(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		return repo.findById(id).get();
 	}
 
 	@Override

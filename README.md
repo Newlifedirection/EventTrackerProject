@@ -31,3 +31,4 @@ Spring REST/JavaScript
 
 ### Lessons Learned
 Learned entity mappings and RESTfull services to manipulate database.
+Learned to use Postman to test GET, POST, PUT, DELETE
