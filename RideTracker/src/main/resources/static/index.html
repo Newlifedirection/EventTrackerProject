@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Tracker</title>
+
+</head>
+<body>
+  <h1>Rides</h1>
+  <form name="trackerForm">
+  	<br>
+    <input id="id" type="number" name="id" placeholder="Id">
+    <br>
+    <input type="text" name="name" placeholder="Name">
+    <br>
+    <input type="text" name="date" placeholder="Date">
+    <br>
+    <input type="text" name="location" placeholder="Location">
+    <br>
+    <input type="number" name="length" placeholder="Length">
+    <br>
+    <input type="text" name="details" placeholder="Details">
+    <br>
+    
+  </form>
+  	<button id="addRide" type="text" name="submit">Add Ride</button>
+  	<br>
+  	<button id="seeAll" name="lookup">See All Rides</button>
+  	<br>
+    <button id="updateRide" type="text" name="submit">Edit Ride</button>
+    <br>
+    <button id="showOne" name="showOne">Show One Ride By Id</button>
+    <br>
+    <button id="delete" name="delete">Delete One Ride By Id</button>
+  <div id="output">
+    <div id="ridesData"></div>
+    <div id="user-feedback" class="user-feedback"></div>
+   
+  </div>
+  
+  <table>
+        <!-- <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Length</th>
+                <th>Details</th>
+            </tr>
+        </thead> -->
+        <tbody id="tablebody">
+          
+        </tbody>
+    </table>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
